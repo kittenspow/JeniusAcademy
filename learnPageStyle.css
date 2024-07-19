@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather+Sans:ital,wght@0,684;1,684&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgba(255, 139, 70, 1);
+    margin: 0;
+    padding: 0;
+} 
+
+header {
+    width: 100%;
+    background-color: rgba(255, 250, 230, 1);
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 800;
+    margin: 0;
+    color: rgba(0, 35, 121, 1);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 35, 121, 1);
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #FF5F00;
+}
+
+.content-container {
+    margin:  50px 120px 0 120px;
+    display: flex;
+    align-items: center;
+}
+
+.content-container .video-section {
+    background-color: #fffae6;
+    border-radius: 10px;
+    padding: 40px 50px;
+}
+
+.video-head {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.video-section .title  h2{
+    color: #002379;
+    font-family: "Merriweather Sans", sans-serif;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.video-section .icon img {
+    width: 90px;
+    border-radius: 20px;
+}
+
+.line {
+    background-color: #C0C1B5;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+}
+
+.video-section iframe {
+    width: 670px;
+}
+
+aside .profile {
+    background-color: #fffae6;
+    border-radius: 10px;
+    margin-left: 25px;
+    padding: 30px 40px 20px 40px;
+}
+
+aside .profile img {
+    width: 140px;
+    height: 153px;
+    border: 6px solid #878787;
+    border-radius: 5px;
+}
+
+aside .profile h3 {
+    color: #002379;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+aside .profile p {
+    text-align: center;
+    color: #878787;
+}
+
+.content-container button {
+    background-color: #002379;
+    color: #fffae6;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px 0;
+    width: 235px;
+    margin-left: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.learning-objective {
+    margin: 15px 120px 100px 120px;
+}
+
+.learning-objective .container {
+    display: flex;
+    align-items: center;
+}
+
+.learning-objective .mathematics-section {
+    background-color: #fffae6;
+    border-radius: 10px;
+    padding: 30px 40px 20px 40px;
+    width: 325px;
+}
+
+.learning-objective .mathematics-section img {
+    width: 65px;
+    border-radius: 15px;
+}
+
+.learning-objective .title  h2{
+    color: #002379;
+    font-family: "Merriweather Sans", sans-serif;
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+.learning-objective .sub-list p {
+    margin: 25px 5px;
+    font-family: "Merriweather Sans", sans-serif;
+    color: #002379;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.forum-section {
+    width: 555px;
+    background-color: #fffae6;
+    border-radius: 10px;
+    margin-left: 25px;
+    padding: 27px 40px;
+    color: #002379;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.forum-section h2 {
+    font-weight: 800;
+}
+
+.forum-section .forum {
+    border: 2px solid #002379;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forum p {
+    font-weight: 800;
+}
+
+.forum-section button {
+    background-color: #002379;
+    border: none;
+    color: #fffae6;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.forum-section button:hover {
+    background-color: #ff8c42;
+}
+
+footer {
+    background-color: #fffae6;
+    text-align: center;
+    padding: 20px 0;
+    color: #ff8c42;
+}
+
+footer .container {
+    margin: 0 auto;
+}
+
+footer h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+footer h4 {
+    margin-top: 0;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .buttons .container {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .buttons .container button {
+        margin-top: 10px;
+    }
+    .buttons button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction:row;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 7px;
+    }
+
+    .subject img {
+        width: 80px;
+        border-radius: 10px;
+    }
+
+    .content-container {
+        margin:  10px 90px 0 90px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content-container .video-section {
+        background-color: #fffae6;
+        border-radius: 10px;
+        padding: 30px 40px;
+    }
+
+    .video-section iframe {
+        width: 300px;
+        height: 150px;
+    }
+    .video-section .title  h2{
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .video-section .icon img {
+        width: 50px;
+        border-radius: 8px;
+    }
+    aside .profile {
+        text-align: center;
+        width: 150px;
+        padding: 20px 0px 10px 0px;
+    }
+    
+    aside .profile img {
+        width: 70px;
+        height: 83px;
+        border-radius: 5px;
+    }
+    
+    aside .profile h3 {
+        font-size: 0.9em;
+    }
+    aside .profile p {
+        font-size: 0.7em;
+    }
+
+    .content-container button {
+        font-size: 10px;
+        padding: 20px 0;
+        width: 145px;
+        margin-top: 10px;
+    }
+
+    .learning-objective {
+        margin:  10px 90px 50px 90px;
+    }
+    
+    .learning-objective .mathematics-section {
+        padding: 20px 30px 10px 30px;
+        width: 325px;
+    }
+    
+    .learning-objective .mathematics-section img {
+        width: 40px;
+        border-radius: 7px;
+    }
+    
+    .learning-objective .title  h2{
+        margin-left: 10px;
+    }
+    
+    .learning-objective .sub-list p {
+        margin: 20px 2px;
+    }
+    
+    .forum-section {
+        width: 255px;
+        background-color: #fffae6;
+        border-radius: 10px;
+        margin-right: 25px;
+        padding: 25px 30px;
+    }
+    
+    .forum-section .forum {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .forum p {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 500px) {
+    .subject img {
+        width: 60px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .subjects-section {
+        margin: 10px 50px 30px 50px;
+        padding: 10px 2px;
+    }
+    .content-container {
+        margin:  10px 90px 0 90px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content-container .video-section {
+        background-color: #fffae6;
+        border-radius: 10px;
+        padding: 30px 20px;
+    }
+
+    .video-section iframe {
+        width: 200px;
+        height: 150px;
+    }
+    .video-section .title  h2{
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .video-section .icon img {
+        width: 50px;
+        border-radius: 8px;
+    }
+    aside .profile {
+        text-align: center;
+        width: 100px;
+        padding: 15px 0px 5px 0px;
+    }
+    
+    aside .profile img {
+        width: 53px;
+        height: 63px;
+        border-radius: 5px;
+    }
+    
+    aside .profile h3 {
+        font-size: 0.6em;
+    }
+    aside .profile p {
+        font-size: 0.5em;
+    }
+
+    .content-container button {
+        font-size: 10px;
+        padding: 10px 0;
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .learning-objective {
+        margin: 10px 30px 50px 30px;
+    }
+
+    .learning-objective .container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .learning-objective .mathematics-section {
+        padding: 20px 30px 10px 30px;
+        width: 305px;
+    }
+    
+    .learning-objective .mathematics-section img {
+        width: 60px;
+        border-radius: 10px;
+    }
+
+    .learning-objective .title  h2{
+        font-size: 1.4em;
+    }
+    
+    .learning-objective .sub-list p {
+        margin: 10px 2px;
+        cursor: pointer;
+    }
+    
+    .forum-section {
+        width:305px;
+        background-color: #fffae6;
+        border-radius: 10px;
+        padding: 15px 30px;
+        margin-top: 20px;
+    }
+    
+    .forum-section .forum {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .forum p {
+        font-size: 0.7em;
+    }
+}

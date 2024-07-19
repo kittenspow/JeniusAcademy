@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather+Sans:ital,wght@0,684;1,684&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgba(255, 139, 70, 1);
+    margin: 0;
+    padding: 0;
+} 
+
+header {
+    width: 100%;
+    background-color: rgba(255, 250, 230, 1);
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 800;
+    margin: 0;
+    color: rgba(0, 35, 121, 1);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 35, 121, 1);
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #FF5F00;
+}
+
+.jumbotron {
+    /* width: 100%; */
+    background-color: #FFFAE6;
+    color: rgba(0, 35, 121, 1);
+    padding: 10px;
+    padding-bottom: 78px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jumbotron-text{
+    text-align: start;
+    margin-left: 9rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.jumbotron-text h1 span {
+    color: #FF8B46;
+}
+
+.jumbotron-text p {
+    font-size: 1.2em;
+}
+
+.jumbotron-image img {
+    margin-top: 40px;
+    max-width: 30rem;
+    height: auto;
+    margin-right: 80px;
+}
+
+.jumbotron h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 800;
+    margin-bottom: 0;
+    font-size: 2.8em;
+}
+
+.jumbotron p {
+    margin-top: 5px;
+}
+
+.jumbotron button {
+    background-color: rgba(0, 35, 121, 1);
+    color: #fffae6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.jumbotron button:hover {
+    background-color: #FF8B46;
+}
+
+.jumbotron a {
+    text-decoration: none;
+    color: #fffae6;
+}
+
+.features, .packages, .faq {
+    padding: 70px 0 20px 0;
+    text-align: center;
+}
+
+.features {
+    background-color: rgba(255, 139, 70, 1);
+    color: rgba(0, 35, 121, 1);
+}
+
+.features h3 {
+    font-size: 30px;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.features .container {
+    padding: 0px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .card-feature {
+    background-color: #FFFAE6;
+    height: 160px;
+    width: 110px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.features .card-feature:hover {
+    transform: scale(1.05);
+}
+
+.features .card-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.features .card-text {
+    font-size: 1em;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: #002379;
+    margin: 0;
+}
+
+.packages {
+    color: #002379;
+    padding-bottom: 150px;
+    margin: 0 auto;
+}
+
+.packages h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.packages .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.packages .card {
+    background-color: rgba(255, 250, 230, 1);
+    border-radius: 25px;
+    padding: 30px 30px 40px 30px;
+    margin: 1px;
+    width: 235px;
+    height: 300px;
+    transition: all 0.4s ease-in-out;
+}
+
+.packages .card:hover {
+    transform: scale(1.05);
+    box-shadow: -1px 6px 33px 4px rgba(0,0,0,0.20);
+}
+
+.packages .card h3 {
+    color: rgba(0, 35, 121, 1);
+    font-size: 2em;
+    margin: 0;
+    text-align: left;
+}
+
+.packages .card .price {
+    color: rgba(0, 35, 121, 1);
+    font-size: 3em;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.packages .card .price span {
+    font-size: 0.4em;
+}
+
+.packages .card .description {
+    color: rgba(0, 35, 121, 1);
+    margin: 10px 0 40px;
+    text-align: left;
+    font-size: 1em;
+}
+
+.button-container {
+    text-align: right;
+    margin-top: 58px;
+}
+
+.packages .card button {
+    background-color: rgba(0, 35, 121, 1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.packages .card button a{
+    color: rgba(255, 250, 230, 1);
+    border-radius: 100px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.packages .card button:hover {
+    background-color: #FF5F00;
+}
+
+.faq {
+    width: 100%;
+    background-color: #002379;
+    border-radius: 30px 30px 0 0;
+}
+
+.faq h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.qna-card {
+    background-color: #fff8e1;
+    text-align: start;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.qna-card:hover {
+    transform: scale(1.02);
+}
+
+.qna-question {
+    background-color: #ff8c42;
+    padding: 15px 20px 15px 20px;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #fff8e1;
+    cursor: pointer;
+}
+
+.qna-answer {
+    padding: 20px;
+    font-size: 1em;
+    color: #003366;
+    background-color: #fff8e1;
+}
+
+footer {
+    background-color: rgba(255, 250, 230, 1);
+    text-align: center;
+    padding: 20px 0;
+    color: #ff8c42;
+}
+
+footer .container {
+    margin: 0 auto;
+}
+
+footer h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+footer h4 {
+    margin-top: 0;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 1200px) {
+    .jumbotron {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .jumbotron-image img {
+        width: 0;
+    }
+    .feature-list {
+        justify-content: center;
+    }
+    .packages {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction:row;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 7px;
+    }
+    .jumbotron-text {
+        margin: 1em 4em;
+    }
+    .jumbotron-text h1 {
+        font-size: 2em;
+    }
+    .jumbotron-text p {
+        font-size: 0.8em;
+    }
+    .jumbotron-image img {
+        width: 0;
+    }
+    .qna-card {
+        width: 90%;
+    }
+
+    .qna-question {
+        font-size: 1em;
+    }
+
+    .qna-answer {
+        font-size: 0.9em;
+    }
+}

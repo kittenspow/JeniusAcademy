@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="registerPageStyle.css">
+</head>
+<body>
+    <!-- START OF HEADER -->
+    <header>
+        <div class="container">
+            <h1>JeniusAcademy</h1>
+            <nav>
+                <ul>
+                    <li><a href="/1. main page/mainPage.html">home</a></li>
+                    <li><a href="/5. learn page/learnPage.html">learn</a></li>
+                    <li><a href="/4. testimony page/testimonyPage.html">testimony</a></li>
+                    <li><a href="/3. subscription page/subscriptionPage.html">subscribe</a></li>
+                    <li><a href="/2. register page/registerPage.html">register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- START OF REGISTER -->
+    <section>
+        <div class="register-page">
+            <h2>Register</h2>
+            <form action="">
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="surname">Surname</label><br>
+                <input type="text" id="surname" name="surname"><br>
+                <label for="email">Email address</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="phone">Phone number</label><br>
+                <input type="number" id="phone" name="phone"><br>
+                <label for="pass">Password</label><br>
+                <input type="password" id="pass" name="pass"><br>
+                <label for="passC">Password Confirmation</label><br>
+                <input type="password" id="passC" name="passC"><br>
+            </form>
+            <div class="button">
+                <button type="button" onclick="validateForm()">register</button>
+            </div>
+        </div>
+    </section>
+    <!-- END OF REGISTER -->
+
+    <!-- START OF FOOTER -->
+    <footer>
+        <div class="container">
+            <h1>JeniusAcademy</h1>
+            <h4>fun learning, bright futures</h4>
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
+    <script src="registerPageScript.js"></script>
+</body>
+</html>
