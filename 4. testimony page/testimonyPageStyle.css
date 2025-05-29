@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather+Sans:ital,wght@0,684;1,684&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgba(255, 139, 70, 1);
+    margin: 0;
+    padding: 0;
+} 
+
+header {
+    width: 100%;
+    background-color: rgba(255, 250, 230, 1);
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 800;
+    margin: 0;
+    color: rgba(0, 35, 121, 1);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #002379;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #FF5F00;
+}
+
+.testimony {
+    margin-top: 50px;
+}
+
+.testimony h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    color: #002379;
+    font-size: 2em;
+    text-align: center;
+}
+
+.testimony .container {
+    margin: 40px 80px 10px 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #FFFAE6;
+    border-radius: 15px;
+    padding: 28px;
+    max-width: 290px;
+    margin: 5px;
+    transition: ease-in-out 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-ava img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.user-detail {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+.package {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.testimonial-text {
+    color: #2d2d2d;
+    line-height: 1.4;
+    font-size: 0.85em;
+}
+
+.quote .container{
+    color: #fffae6;
+    font-family: "Merriweather Sans", sans-serif;
+    text-align: center;
+    margin: 150px;
+}
+
+.quote .container h1 {
+    font-size: 2em;
+}
+
+.quote button {
+    background-color: #ff8c42;
+    border: 2px solid #FFFAE6;
+    padding: 9px 17px;
+    border-radius: 100px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin: 15px auto;
+}
+
+.quote button a {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+    color: #FFFAE6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.quote button:hover {
+    background-color: #002379;
+    border: 2px solid #002379;
+}
+
+.quote button:hover a {
+    color: #FFFAE6;
+}
+
+footer {
+    background-color: #fffae6;
+    text-align: center;
+    padding: 20px 0;
+    color: #ff8c42;
+}
+
+footer .container {
+    margin: 0 auto;
+}
+
+footer h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+footer h4 {
+    margin-top: 0;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 1200px) {
+    .testimony .container {
+        margin: 50px;
+    }
+    .card {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .user-info {
+        margin-bottom: 10px;
+        font-size: 0.8em;
+    }
+
+    .user-ava img {
+        width: 34px;
+        height: 34px;
+        margin-right: 13px;
+    }
+
+    .testimonial-text {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction:row;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 7px;
+    }
+
+    .testimony .container {
+        margin: 50px;
+    }
+    .card {
+        width: 140px;
+        padding: 20px;
+    }
+
+    .user-info {
+        margin-bottom: 10px;
+        font-size: 0.7em;
+    }
+
+    .user-ava img {
+        width: 34px;
+        height: 34px;
+        margin-right: 13px;
+    }
+
+    .testimonial-text {
+        font-size: 0.5em;
+    }
+    .quote .container {
+        margin: 100px 50px;
+    }
+    .quote .container h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 430px) {
+    .testimony .container {
+        margin: 20px;
+    }
+    .card {
+        width: 120px;
+        padding: 20px;
+    }
+
+    .user-info {
+        margin-bottom: 10px;
+        font-size: 0.6em;
+    }
+
+    .user-ava img {
+        width: 34px;
+        height: 34px;
+        margin-right: 13px;
+    }
+
+    .testimonial-text {
+        font-size: 0.5em;
+    }
+    .testimony h1 {
+        font-size: 4vw;
+    }
+}
